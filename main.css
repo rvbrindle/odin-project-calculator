@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+	font-family: Courier; 
+}
+
+.wrapper {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+.screen{
+	width: 100%;
+	background-color: #333;
+	min-height: 120px;
+	font-size: 70px;
+	text-align: center;
+	color: #39FF14;
+}
+
+.button-body{
+	width: 100%;
+	background-color: #999;
+	float: left;
+}
+
+.numbers{
+	width: 50%;
+	font-size: 0;
+	float: left;
+}
+
+.number-button {
+	width: 33.3333%;
+	display: inline-block;
+	font-size: 40px;
+	text-align: center;
+}
+
+.number-button:last-child {
+	width: 100%;
+}
+.number-button:hover {
+	background-color: #444;
+	cursor: pointer;
+}
+.operators{
+	float: left;
+	width: 50%;
+}
+
+.operator-button {
+	background-color: orange;
+	font-size: 80px;
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+}
+
+.operator-button:nth-child(5),
+.operator-button:nth-child(6) {
+	width: 50%;
+}
+
+.operator-button:hover {
+	background-color: #EE7600;
+}
+
+@media (max-width: 600px) {
+	.operators{
+		width: 100%;
+	}
+	.numbers{
+		width: 100%;
+	}
+}
